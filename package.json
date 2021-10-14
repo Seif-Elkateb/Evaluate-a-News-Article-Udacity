@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "webpack --config prod.config.js",
-    "dev": "webpack serve --config dev.config.js --open"
+    "dev": "webpack serve --config dev.config.js --open",
+    "start": "node src/server/index.js"
   },
   "author": "sifelkateb",
   "license": "ISC",
@@ -28,5 +29,10 @@
     "webpack": "^5.58.1",
     "webpack-cli": "^4.9.0",
     "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
   }
 }

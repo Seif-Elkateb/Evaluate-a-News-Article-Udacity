@@ -21,7 +21,7 @@ module.exports={
   plugins:[
     new HtmlWebpackPlugin({
       template:'./src/client/views/index.html',
-      filename: 'index.[contenthash].html'
+      filename: 'index.html'
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
