@@ -1,0 +1,14 @@
+img{
+  position: absolute;
+  opacity: .7;
+  right:30px;
+  top:20%;
+  width:300px;
+  height:auto;
+  max-width:300px;
+}
+@media   (max-width: 1180px) {
+  img{
+    display: none;
+  }
+}
