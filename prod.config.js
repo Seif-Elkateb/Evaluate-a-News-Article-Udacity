@@ -6,7 +6,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports={
-  entry:'./src/client/app.js',
+  entry:["regenerator-runtime/runtime.js",'./src/client/app.js'],
   mode:'production',
   output:{
     path:path.resolve(__dirname,'dist'),
