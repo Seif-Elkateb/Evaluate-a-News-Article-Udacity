@@ -30,6 +30,9 @@ const postData=async(url,obj)=>{
     console.log(error);
   }
 }
+/*
+update UI depending on the results from the postData async function
+*/
 const updataUi=(responseData)=>{
   results.style.display='table';
   agreement.innerHTML=responseData.agreement;
@@ -39,6 +42,7 @@ const updataUi=(responseData)=>{
   scoreTag.innerHTML=responseData.score_tag;
 }
 
+// add event listener to the btn and call the postData function with the url provided by the users
 btn.addEventListener('click',()=>{
   const articleUrl=input.value;
   const obj={articleUrl};
