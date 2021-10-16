@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports={
   entry:["regenerator-runtime/runtime.js",'./src/client/app.js'],
@@ -27,6 +28,8 @@ module.exports={
     new MiniCssExtractPlugin({
       filename:'style/style.[contenthash].css'
     }),
+    new WorkboxPlugin.GenerateSW()
+
   ],
   module: {
     rules: [
