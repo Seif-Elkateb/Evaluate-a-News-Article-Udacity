@@ -12,3 +12,4 @@ export const updataUi=(responseData)=>{
   confidence.innerHTML=responseData.confidence;
   scoreTag.innerHTML=responseData.score_tag;
 }
+

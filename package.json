@@ -4,11 +4,12 @@
   "description": "udacity project article news analysis",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "prod": "webpack --config prod.config.js",
     "dev": "webpack serve --config dev.config.js --open",
     "start": "node src/server/index.js"
   },
+  "type": "module",
   "author": "sifelkateb",
   "license": "ISC",
   "devDependencies": {
